@@ -4,13 +4,13 @@ Google Apps Script which checks Gmail, finds unread e-mails from Google Search C
 
 I've made this script for people that have access to a lot of Search Console properties and receive tens or hundreds e-mail notifications from the Search Console every months. The script helps you keep your inbox clean and moves informations to a Data Studio report which you can easily set up.
 
-**Use it on your own risk and only if you know, what exactly it does.** The script is beta, it may contain bugs. Pleas report any issues you find. Thank you!
+**Use it on your own risk and only if you know, what exactly it does.** The script is beta, it may contain bugs. Please report any issues you find. Thank you!
 
 ## How to install the script and how to make it work
 
 1. Create a new Google Spreadsheet on your Google Drive.
 1. Open the script editor (menu *Tools* -> *Script editor*)
-1. Replace the content of the Code.gs file in the editor with the content of the file src/Code.js.
+1. Replace the content of the Code.gs file in the editor with the content of the file [src/Code.js](https://github.com/MarekProkop/search-console-emails/blob/main/src/Code.js).
 1. Save the file and close the editor.
 1. Reload the spreadsheets. *Search Console Emails* should appear in the main menu.
 1. Now you can call the script from the menu manually.
