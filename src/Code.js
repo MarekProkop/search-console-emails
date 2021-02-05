@@ -1,18 +1,18 @@
 function onOpen() {
-  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var ss = SpreadsheetApp.getActiveSpreadsheet()
   var menuEntries = [
     { name: 'Process Search Console E-mails', functionName: 'processEmails' }
-  ];
-  ss.addMenu('Search Console E-mails', menuEntries);
+  ]
+  ss.addMenu('Search Console E-mails', menuEntries)
 }
 
 /**
  * Fetch unread threads, mark them read, move them to archive and append them to a sheet
  */
 function processEmails() {
-  const query = 'from:sc-noreply@google.com is:unread'; // search query -- unread messages from the Search Console
-  const sheetName = 'Threads'; // a name of the sheet, in which the threads should be listed
-  const listHeader = ['Last Date', 'Subject', 'Website', 'Subject Pattern', 'Link']; // thread list headers
+  const query = 'from:sc-noreply@google.com is:unread' // search query -- unread messages from the Search Console
+  const sheetName = 'Threads' // a name of the sheet, in which the threads should be listed
+  const listHeader = ['Last Date', 'Subject', 'Website', 'Subject Pattern', 'Link'] // thread list headers
   const reUrl = /https?:\/\/[-a-z0-9./]+\//
   const reSite = /(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]/
 
@@ -48,7 +48,7 @@ function processEmails() {
 
     // append the output table to the sheet
     const ss = SpreadsheetApp.getActive()
-    const sheet = ss.getSheetByName(sheetName) || ss.insertSheet(sheetName);
+    const sheet = ss.getSheetByName(sheetName) || ss.insertSheet(sheetName)
     var lastRow = sheet.getLastRow()
     if (lastRow < 1) {
       // the sheet is empty -> insert headers
