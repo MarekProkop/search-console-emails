@@ -1,0 +1,28 @@
+{
+  "name": "search-console-emails",
+  "version": "1.0.0",
+  "description": "Google Apps Script script which checks Gmail, finds unread e-mails from Google Search Console, logs them in a spreadsheet, marks them as read and archives them.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarekProkop/search-console-emails.git"
+  },
+  "keywords": [
+    "search console",
+    "gmail",
+    "apps script",
+    "google sheets"
+  ],
+  "author": "Marek Prokop",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarekProkop/search-console-emails/issues"
+  },
+  "homepage": "https://github.com/MarekProkop/search-console-emails#readme",
+  "dependencies": {
+    "@types/google-apps-script": "^1.0.22"
+  }
+}
