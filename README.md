@@ -10,10 +10,19 @@ I've made this script for people that have access to a lot of Search Console pro
 
 1. Create a new Google Spreadsheet on your Google Drive.
 1. Open the script editor (menu *Tools* -> *Script editor*)
+1. Name the apps script project as you wish (at the very top).
 1. Replace the content of the Code.gs file in the editor with the content of the file [src/Code.js](https://github.com/MarekProkop/search-console-emails/blob/main/src/Code.js).
 1. Save the file and close the editor.
 1. Reload the spreadsheets. *Search Console Emails* should appear in the main menu.
 1. Now you can call the script from the menu manually.
+
+The script editor with a part of the script:
+
+![Sample spreadsheet](./img/apps-script-editor.png)
+
+A spreadsheet with sample data:
+
+![Sample spreadsheet](./img/sample-spreadsheet.png)
 
 In addition you may want to call the script automatically, e.g. once a day. To set up that, do the following:
 
@@ -39,5 +48,8 @@ If you have more than 100 unread e-mails from sc-noreply@google.com, only 100 of
 
 ## Integration with Google Data Studio
 
-I recommend to create a report in Google Data Studio, which connects to the spreadsheet and visualise its data. I will publish a sample report some day.
+I recommend to create a report in Google Data Studio, which connects to the spreadsheet and visualise its data. Copy [a sample report](https://datastudio.google.com/reporting/1afcf702-573c-48a5-a224-5542bd93d547) and point a new data source to your spreadsheet.
 
+Sample report:
+
+![Sample spreadsheet](./img/sample-report.png)
